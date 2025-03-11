@@ -1,8 +1,17 @@
-html {
-    --text-color:#001E52;
-    --text-color-hover:#5465FF;
-    --background:#BFD7FF;
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('./assets/RobotoFlex.ttf') format('truetype');
+    font-weight: 100 1000;
+    font-stretch: 25% 151%;
+    font-style: normal;
 }
+
+html {
+    --text-color: #001E52;
+    --text-color-hover: #5465FF;
+    --background: #BFD7FF;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,70 +21,156 @@ html {
 body {
     display: flex;
     justify-content: flex-start;
+    font-family: 'Roboto Flex', serif;
     align-items: center;
     flex-direction: column;
     height: 600vh;
-    font-family: sans-serif;
-    background:var(--background);
-    color:#001E52;
+    background: var(--background);
+    color: #001E52;
 }
 
 h1 {
-    font-size: clamp(6rem, 5.0526rem + 4.2105vw, 8rem);
-    line-height:.8;
+    font-size: clamp(4rem, 2.9639rem + 4.1967vw, 8rem);
+    line-height: .8;
+    font-weight: 1000;
+    text-transform: uppercase;
+    animation: textAnimation 3s linear infinite alternate;
 }
 
-svg {
-    width: 100px;
-    fill: var(--text-color);
-    animation: --rotation linear;
-    animation-timeline: scroll();
+
+
+h2 {
+    font-weight: 1000;
+    padding: 1rem 1rem;
+}
+
+h3 {
+    font-size: 5rem;
+    font-weight: 1000;
+    padding-left: 1rem;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight:800;
+}
+
+
+header,
+section {
+    border-bottom: 2px solid var(--text-color);
+    width: 100%;
 }
 
 header {
-    position: sticky;
-    top:1em;
     display: flex;
     align-items: center;
-    height: 5em;
-    width: auto;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
+
+    position: sticky;
+    top: 0;
+
+    height: 7rem;
+    padding: 0 1rem;
+    margin: 0 1rem 1rem 1rem;
+
     background: var(--background);
-    border: 2px solid black;
-    padding: 0 1em;
-    margin: 1em;
 }
 
 header ul {
     display: flex;
-    height: 100%;
+    height: 80%;
     justify-content: center;
     align-items: center;
     margin: auto;
-    gap: 1em;
+    gap: 3rem;
     list-style: none;
-    
+
 }
 
-header ul li a{
+header ul li a {
     color: black;
     text-decoration: none;
     transition: 150ms linear;
 }
 
-header ul li a:hover{
+header ul li svg {
+    width: 5rem;
+    fill: var(--text-color);
+    animation: --rotation linear;
+    animation-timeline: scroll();
+}
+
+header ul li a:hover {
     color: var(--text-color-hover);
     text-decoration: underline;
 }
+
+.first {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    height: 20vh;
+    padding: 10%;
+}
+
+.first:first-child {
+    flex-grow: 1;
+}
+
+.first:last-child {
+    flex-grow: 2;
+}
+
+.projects li {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    background: var(--background);
+    color: var(--text-color);
+    border-bottom:2px solid var(--text-color);
+    padding-left: 0;
+    
+    & a {
+        display: flex;
+        gap:1rem;
+        color: var(--text-color);
+        text-decoration: none;
+    }
+}
+.projects ul li:first-child{
+    border-top: 2px solid var(--text-color);
+    border-bottom:2px solid var(--text-color);
+}
+.projects li:hover{
+    --text-color:  #BFD7FF;
+    --background: #001E52;
+    padding-left: 3rem;
+    transition: 150ms linear;
+    
+    & h3{
+    --text-color: #001E52; 
+    --background: #BFD7FF;
+    }
+}
+
+
+
+
+
+
+
 
 @keyframes --rotation {
     0% {
         transform: rotate(0);
         /* filter: invert(1) sepia(1) saturate(100%) hue-rotate(0deg); */
 
-        
+
     }
+
     100% {
         transform: rotate(360deg);
         /* filter: invert(0) sepia(1) saturate(100%) hue-rotate(360deg); */
@@ -83,3 +178,19 @@ header ul li a:hover{
     }
 }
 
+@keyframes textAnimation {
+    0% {
+        font-variation-settings:  "GRAD" -200, "YOPQ" 25;
+    }
+    100% {
+        font-variation-settings: "GRAD" 150, "YOPQ" 135;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .first {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
