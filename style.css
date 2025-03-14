@@ -132,6 +132,7 @@ header ul li a:hover {
     color: var(--text-color);
     border-bottom:2px solid var(--text-color);
     padding-left: 0;
+    transition: 150ms linear;
     
     & a {
         display: flex;
