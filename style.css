@@ -10,6 +10,9 @@ html {
     --text-color: #001E52;
     --text-color-hover: #5465FF;
     --background: #BFD7FF;
+    
+    --border-radius: 0;
+    --border-width: 0.125rem;
 }
 
 * {
@@ -130,7 +133,7 @@ header ul li a:hover {
     height: 10rem;
     background: var(--background);
     color: var(--text-color);
-    border-bottom:2px solid var(--text-color);
+    var(--border-width)border-bottom:var(--border-width) solid var(--text-color);
     padding-left: 0;
     transition: 150ms linear;
     
@@ -142,8 +145,8 @@ header ul li a:hover {
     }
 }
 .projects ul li:first-child{
-    border-top: 2px solid var(--text-color);
-    border-bottom:2px solid var(--text-color);
+    border-top: var(--border-width) solid var(--text-color);
+    border-bottom:var(--border-width) solid var(--text-color);
 }
 .projects li:hover{
     --text-color:  #BFD7FF;
@@ -194,4 +197,11 @@ header ul li a:hover {
         align-items: flex-start;
         gap: 1rem;
     }
+}
+
+.tag {
+    display: inline;
+    outline: var(--border-width) solid var(--text-color);
+    color: var(--text-color);
+    padding: 1rem;
 }
