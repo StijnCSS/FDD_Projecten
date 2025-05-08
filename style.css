@@ -11,6 +11,7 @@ html {
     --text-color-hover: #5465FF;
     --background: #BFD7FF;
     
+    --max-width:64rem;
     --border-radius: 0;
     --border-width: 0.125rem;
 }
@@ -63,6 +64,7 @@ header,
 section {
     border-bottom: 2px solid var(--text-color);
     width: 100%;
+    
 }
 
 header {
@@ -73,6 +75,7 @@ header {
 
     position: sticky;
     top: 0;
+    z-index: 3;
 
     height: 7rem;
     padding: 0 1rem;
@@ -127,13 +130,15 @@ header ul li a:hover {
     flex-grow: 2;
 }
 
-.projects li {
+
+
+.list li {
     display: flex;
     align-items: center;
     height: 10rem;
     background: var(--background);
     color: var(--text-color);
-    var(--border-width)border-bottom:var(--border-width) solid var(--text-color);
+    border-bottom:var(--border-width) solid var(--text-color);
     padding-left: 0;
     transition: 150ms linear;
     
@@ -144,11 +149,11 @@ header ul li a:hover {
         text-decoration: none;
     }
 }
-.projects ul li:first-child{
+.list ul li{
     border-top: var(--border-width) solid var(--text-color);
     border-bottom:var(--border-width) solid var(--text-color);
 }
-.projects li:hover{
+.list li:hover{
     --text-color:  #BFD7FF;
     --background: #001E52;
     padding-left: 3rem;
@@ -191,17 +196,295 @@ header ul li a:hover {
     }
 }
 
-@media only screen and (max-width: 640px) {
-    .first {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-    }
-}
+
 
 .tag {
     display: inline;
     outline: var(--border-width) solid var(--text-color);
     color: var(--text-color);
     padding: 1rem;
+}
+
+
+
+main.nerd {
+    max-width: var(--max-width); /* gelijk aan 1024px bij 1rem = 16px */
+}
+/* Accordion markers */
+summary::marker {
+    font-size: 2rem;
+    content: "🥹";
+}
+
+[open] summary::marker {
+    font-size: 2rem;
+    content: "😀";
+}
+
+/* Hover effect voor summary */
+summary:hover {
+    cursor: pointer;
+    background: var(--text-color);
+    color: white;
+    transition: background 0.3s ease;
+}
+
+/* Styling voor dialog backdrop */
+dialog::backdrop {
+    background-color: salmon;
+}
+
+/* Dialog styling met animatie */
+dialog {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    border: none;
+    padding: 2rem;
+    max-width: 30rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: button styling in demo */
+.nerd button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: var(--text-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.nerd button:hover {
+    background: var(--text-color-hover);
+}
+
+
+/* Layout upgrade for nerd page */
+.nerd {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+
+.nerd section {
+    padding: 2rem;
+    animation: fadeInUp 0.6s ease both;
+    position: relative;
+    width: 100%;
+    max-width: var(--max-width);
+    margin-bottom: 2rem;
+    border: 2px solid var(--text-color);
+    padding: 2rem;
+}
+
+.nerd img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.nerd h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--text-color);
+    
+}
+
+.nerd pre {
+    background: #001E52;
+    color: #fff;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+/* Subtle animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.nerd {
+    max-width: 800px;
+    width: 90%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    line-height: 1.6;
+    font-size: 1.125rem;
+}
+
+.nerd img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.nerd .button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: var(--text-color);
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.nerd .button:hover {
+    background: var(--text-color-hover);
+}
+
+
+.nerd ul {
+    list-style: disc inside;
+    margin-left: 1rem;
+}
+
+
+.nerd details {
+    border: 1px solid var(--text-color);
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.nerd details summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nerd code, .nerd pre {
+    background-color: var(--text-color);
+    color: var(--background);
+    padding: 0.5rem;
+    display: block;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+.nerd .meta {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+.weeklyNerds ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+}
+
+
+.nerd {
+    width: 100%;
+    max-width: none;
+    background: var(--background);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Flex', serif;
+}
+
+.nerd h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 0.25rem;
+}
+
+.nerd p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+
+.doelen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--background);
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    gap: 2rem;
+}
+
+
+
+.doelen p{
+    font-size: 1.5rem;
+    max-width: var(--max-width);
+}
+
+.doelen-grid {
+    color: var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: var(--max-width);
+    place-items: center;
+}
+
+.goal {
+    background: var(--background);
+    padding: 2rem;
+    text-align: left;
+    color: var(--text-color);
+}
+
+@media only screen and (max-width: 800px) {
+    .first {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .doelen-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .doelen h2{
+    text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1204px) {
+    .weeklyNerds ul {
+        grid-template-columns: 1fr;
+    }
 }
