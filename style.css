@@ -467,6 +467,23 @@ dialog {
     color: var(--text-color);
 }
 
+/* Added styles for goal-stack and updated doelen-grid for two-column layout */
+.goal-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+@media only screen and (min-width: 801px) {
+    .doelen-grid {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+
+}
+
 @media only screen and (max-width: 800px) {
     .first {
         flex-direction: column;
@@ -486,5 +503,8 @@ dialog {
 @media only screen and (max-width: 1204px) {
     .weeklyNerds ul {
         grid-template-columns: 1fr;
+    }
+    .goal-stack {
+        max-width: 100%;
     }
 }
