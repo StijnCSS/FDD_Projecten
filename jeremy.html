@@ -1,58 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeremy Keith - Weekly Nerd</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeremy Keith - Weekly Nerd</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="nerds.css" />
 </head>
+
 <body>
-    <header>
-        <ul>
-            <li><a href="/index.html">Projecten</a></li>
-            <li><svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><path d="M59.4287 0H68.5714V36.7999C68.5714 45.1286 68.5714 49.2929 70.32 52.4153C71.5558 54.622 73.3779 56.4441 75.5846 57.6798C78.707 59.4284 82.8714 59.4284 91.2 59.4284H128V68.5714C95.1785 68.5714 68.5714 95.1786 68.5714 128H59.4287V91.2001C59.4287 82.8714 59.4287 78.7071 57.68 75.5846C56.4442 73.3778 54.6221 71.5559 52.4154 70.32C49.293 68.5714 45.1286 68.5714 36.8 68.5714H0V59.4284C32.8215 59.4284 59.4287 32.8214 59.4287 0Z"/></svg></li>
-            <li><a href="/index.html">Weekly Nerds</a></li>
-        </ul>
-    </header>
-    <main class="nerd">
-        <section>
-            <img src="./images/jeremy.jpeg" alt="Foto van Jeremy Keith">
-            <h1>Jeremy Keith</h1>
-            <p class="meta">Spreker: Jeremy Keith &nbsp;|&nbsp; Datum: 26 februari 2025</p>
-            <p><strong>Introductie:</strong> Jeremy Keith is een spreker bij Clearleft en voorstander van het web zoals het bedoeld is: robuust, toegankelijk en toekomstbestendig. In zijn talk over Progressive Enhancement liet hij zien hoe we het web kunnen verbeteren zonder gebruikers met oudere browsers uit te sluiten.</p>
+  <header>
+    <ul>
+      <li>
+        <a href="index.html">
+          <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M59.4287 0H68.5714V36.7999C68.5714 45.1286 68.5714 49.2929 70.32 52.4153C71.5558 54.622 73.3779 56.4441 75.5846 57.6798C78.707 59.4284 82.8714 59.4284 91.2 59.4284H128V68.5714C95.1785 68.5714 68.5714 95.1786 68.5714 128H59.4287V91.2001C59.4287 82.8714 59.4287 78.7071 57.68 75.5846C56.4442 73.3778 54.6221 71.5559 52.4154 70.32C49.293 68.5714 45.1286 68.5714 36.8 68.5714H0V59.4284C32.8215 59.4284 59.4287 32.8214 59.4287 0Z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <main class="nerd">
+    <section class="hero-section">
+      <h1 class="hero-title">Weekly Nerds</h1>
+      <p class="hero-subtitle">Jeremy Keith – Progressive Enhancement</p>
+    </section>
+
+    <div class="nerd-wrapper">
+      <div class="nerd-content">
+        <section class="nerd-section">
+          <img src="./images/jeremy.jpeg" alt="Foto van Jeremy Keith" />
+          <h2 class="nerd-title">Introductie</h2>
+          <p class="nerd-text">
+            Jeremy Keith is een spreker bij Clearleft en voorstander van het web zoals het bedoeld is: robuust, toegankelijk en toekomstbestendig. In zijn talk over Progressive Enhancement liet hij zien hoe we het web kunnen verbeteren zonder gebruikers met oudere browsers uit te sluiten.
+          </p>
+          <p class="meta">Spreker: Jeremy Keith | Datum: 26 februari 2025</p>
         </section>
 
-        <section>
-            <h2>Waar ging de talk over?</h2>
-            <p>Jeremy besprak het verschil tussen imperatief en declaratief programmeren en hoe dit zich vertaalt naar het bouwen van het web. HTML en CSS zijn declaratief en veerkrachtig. JavaScript is imperatief en foutgevoeliger. Hij pleit ervoor om JavaScript alleen te gebruiken waar het echt nodig is: “Javascript should only do what only JavaScript can do.”</p>
+        <section class="nerd-section">
+          <h2 class="nerd-title">Waar ging de talk over?</h2>
+          <p class="nerd-text">
+            Jeremy besprak het verschil tussen imperatief en declaratief programmeren en hoe dit zich vertaalt naar het bouwen van het web. HTML en CSS zijn declaratief en veerkrachtig. JavaScript is imperatief en foutgevoeliger. Hij pleit ervoor om JavaScript alleen te gebruiken waar het echt nodig is: “Javascript should only do what only JavaScript can do.”
+          </p>
         </section>
 
-        <section>
-            <h2>Belangrijke inzichten</h2>
-            <ul>
-                <li>Gebruik <strong>native HTML-elementen</strong> zoals <code>&lt;button&gt;</code> in plaats van aangepaste <code>&lt;div&gt;</code>-knoppen</li>
-                <li>“Be the browser’s mentor, not its micro-manager” – geef controle aan de browser</li>
-                <li><strong>Imperatief vs Declaratief denken</strong>: twee mindsets voor het oplossen van problemen</li>
-                <li>Design systems kunnen ook declaratief zijn, door vanuit het geheel te denken in plaats van alles op te knippen</li>
-                <li>Tools zoals <code>localStorage</code>, <code>Cookies</code>, <code>IndexedDB</code> en <code>localForage</code> kunnen worden gebruikt om data client-side op te slaan</li>
-            </ul>
+        <section class="nerd-section">
+          <h2 class="nerd-title">Belangrijke inzichten</h2>
+          <ul>
+            <li>Gebruik <span>native HTML-elementen</span> zoals <code>&lt;button&gt;</code> in plaats van aangepaste <code>&lt;div&gt;</code>-knoppen</li>
+            <li>“Be the browser’s mentor, not its micro-manager” – geef controle aan de browser</li>
+            <li><span>Imperatief vs Declaratief denken</span>: twee mindsets voor het oplossen van problemen</li>
+            <li>Design systems kunnen ook declaratief zijn, door vanuit het geheel te denken in plaats van alles op te knippen</li>
+            <li>Tools zoals <code>localStorage</code>, <code>Cookies</code>, <code>IndexedDB</code> en <code>localForage</code> kunnen worden gebruikt om data client-side op te slaan</li>
+          </ul>
         </section>
 
-        <section>
-            <h2>Voorbeelden & bronnen</h2>
-            <ul>
-                <li>Utopia scaling – voor responsieve typografie</li>
-                <li><a href="https://youtube.com/layoutland" target="_blank">Layout Land (YouTube)</a></li>
-                <li><a href="https://every-layout.dev" target="_blank">Every Layout</a></li>
-                <li><a href="https://buildexcellentwebsit.es" target="_blank">Build Excellent Websites</a></li>
-                <li><a href="https://alistapart.com/article/dao/" target="_blank">A Dao of Web Design</a></li>
-            </ul>
+        <section class="nerd-section">
+          <h2 class="nerd-title">Voorbeelden & bronnen</h2>
+          <ul>
+            <li>Utopia scaling – voor responsieve typografie</li>
+            <li><a href="https://youtube.com/layoutland" target="_blank">Layout Land (YouTube)</a></li>
+            <li><a href="https://every-layout.dev" target="_blank">Every Layout</a></li>
+            <li><a href="https://buildexcellentwebsit.es" target="_blank">Build Excellent Websites</a></li>
+            <li><a href="https://alistapart.com/article/dao/" target="_blank">A Dao of Web Design</a></li>
+          </ul>
         </section>
 
-        <section>
-            <h2>Conclusie</h2>
-            <p>Deze talk was een fijne reminder dat eenvoud en toegankelijkheid vaak de beste uitgangspunten zijn. Ik wil in mijn werk proberen het web robuust te houden en niet alles met JavaScript op te lossen. Progressive enhancement voelt als een eerlijke en duurzame aanpak waar ik verder in wil duiken.</p>
+        <section class="nerd-section">
+          <h2 class="nerd-title">Conclusie</h2>
+          <p class="nerd-text">
+            Deze talk was een fijne reminder dat eenvoud en toegankelijkheid vaak de beste uitgangspunten zijn. Ik wil in mijn werk proberen het web robuust te houden en niet alles met JavaScript op te lossen. Progressive enhancement voelt als een eerlijke en duurzame aanpak waar ik verder in wil duiken.
+          </p>
         </section>
-    </main>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>

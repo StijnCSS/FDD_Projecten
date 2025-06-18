@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hack-A-Ton</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hack-A-Ton</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../nerds.css" />
 </head>
+
 <body>
-    <header>
-        <ul>
-            <li><a href="/index.html">Projecten</a></li>
-            <li><svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-                <path d="M59.4287 0H68.5714V36.7999C68.5714 45.1286 68.5714 49.2929 70.32 52.4153C71.5558 54.622 73.3779 56.4441 75.5846 57.6798C78.707 59.4284 82.8714 59.4284 91.2 59.4284H128V68.5714C95.1785 68.5714 68.5714 95.1786 68.5714 128H59.4287V91.2001C59.4287 82.8714 59.4287 78.7071 57.68 75.5846C56.4442 73.3778 54.6221 71.5559 52.4154 70.32C49.293 68.5714 45.1286 68.5714 36.8 68.5714H0V59.4284C32.8215 59.4284 59.4287 32.8214 59.4287 0Z"/>
-                </svg>
-                </li>
-            <li><a href="/index.html">Weekly Nerds</a></li>
-        </ul>
-    </header>
-    <main class="nerd">
-      <section>
-        <h1>Hackathon</h1>
-        <p class="meta">Stijn, Liam & Christiaan | Datum</p>
-        <a href="liamvanbart1.github.io/Team10/" target="_blank" class="button">Bekijk de site</a>
-        <p>Tijdens een hackathon kregen we één week de tijd om nieuwe Chrome Canary features te testen en een creatieve website te bouwen. We ontvingen een JSON-bestand met metadata over vrouwen die impact hebben gemaakt in de wereld van technologie. Ons idee was om deze data op een speelse manier te visualiseren in een 3D-pilaarvormige carousel.</p>
-      </section>
+  <header>
+    <ul>
+      <li>
+        <a href="index.html">
+          <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M59.4287 0H68.5714V36.7999C68.5714 45.1286 68.5714 49.2929 70.32 52.4153C71.5558 54.622 73.3779 56.4441 75.5846 57.6798C78.707 59.4284 82.8714 59.4284 91.2 59.4284H128V68.5714C95.1785 68.5714 68.5714 95.1786 68.5714 128H59.4287V91.2001C59.4287 82.8714 59.4287 78.7071 57.68 75.5846C56.4442 73.3778 54.6221 71.5559 52.4154 70.32C49.293 68.5714 45.1286 68.5714 36.8 68.5714H0V59.4284C32.8215 59.4284 59.4287 32.8214 59.4287 0Z" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </header>
 
-      <section>
-        <h2>Projectopzet en rolverdeling</h2>
-        <ul>
-          <li><strong>Stijn:</strong> Conceptontwikkeling en visuele styling van de pilaar</li>
-          <li><strong>Liam:</strong> Techniek van de carousel met CSS</li>
-          <li><strong>Christiaan:</strong> Scroll-driven animaties & anchor positioning</li>
-        </ul>
-        <p>We kozen voor een stijl die doet denken aan een Egyptische pilaar, waarbij de geanimeerde vrouwen als hiërogliefen verschijnen op de zijvlakken. De pilaar beweegt met scroll en bevat een detailweergave per persoon.</p>
-      </section>
+  <main class="nerd">
+    <section class="hero-section">
+      <h1 class="hero-title">Hackathon</h1>
+      <p class="hero-subtitle">Team 10 – Stijn, Liam & Christiaan</p>
+    </section>
 
-      <section>
-        <h2>Gebruikte technieken</h2>
-        <ul>
-          <li><strong>Scroll snap events:</strong> voor een vloeiende carrousel zonder JavaScript</li>
-          <li><strong>Anchor positioning:</strong> om detailpagina’s aan te roepen via anchors</li>
-          <li><strong>Sibling-index & sibling-count:</strong> voor dynamische 3D-positionering</li>
-          <li><strong>Scroll-driven animations:</strong> om door de pilaar te navigeren met scroll</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Wat heb ik geleerd?</h2>
-        <p>Ik heb voor het eerst iets in 3D gemaakt en moest daar zelfs wiskunde voor gebruiken om de pilaar modulair op te bouwen. Ook leerde ik hoe belangrijk het is om ieders kracht in te zetten binnen een team. Door goede taakverdeling hebben we een tof project neergezet met technieken die ik voorheen nog niet kende.</p>
-      </section>
-      <section>
-        <img src="./images/hackaton02.jpeg" alt="Hackathon project">
-        <img src="./images/hackaton.jpeg" alt="Hackathon project">
-        <img src="./images/hackaton01.jpeg" alt="Hackathon project">
+    <div class="nerd-wrapper">
+      <div class="nerd-content">
+        <section class="nerd-section">
+          <p class="meta">Hackathon project | Weekproject CMD</p>
+          <a href="https://liamvanbart1.github.io/Team10/" target="_blank" class="button">Bekijk de site</a>
+          <p class="nerd-text">
+            Tijdens een hackathon kregen we één week de tijd om nieuwe Chrome Canary features te testen en een creatieve website te bouwen. We ontvingen een JSON-bestand met metadata over vrouwen die impact hebben gemaakt in de wereld van technologie. Ons idee was om deze data op een speelse manier te visualiseren in een 3D-pilaarvormige carousel.
+          </p>
         </section>
-    </main>
+
+        <section class="nerd-section">
+          <h2 class="nerd-title">Projectopzet en rolverdeling</h2>
+          <ul>
+            <li><span>Stijn:</span> Conceptontwikkeling en visuele styling van de pilaar</li>
+            <li><span>Liam:</span> Techniek van de carousel met CSS</li>
+            <li><span>Christiaan:</span> Scroll-driven animaties & anchor positioning</li>
+          </ul>
+          <p class="nerd-text">
+            We kozen voor een stijl die doet denken aan een Egyptische pilaar, waarbij de geanimeerde vrouwen als hiërogliefen verschijnen op de zijvlakken. De pilaar beweegt met scroll en bevat een detailweergave per persoon.
+          </p>
+        </section>
+
+        <section class="nerd-section">
+          <h2 class="nerd-title">Gebruikte technieken</h2>
+          <ul>
+            <li><span>Scroll snap events:</span> voor een vloeiende carrousel zonder JavaScript</li>
+            <li><span>Anchor positioning:</span> om detailpagina’s aan te roepen via anchors</li>
+            <li><span>Sibling-index & sibling-count:</span> voor dynamische 3D-positionering</li>
+            <li><span>Scroll-driven animations:</span> om door de pilaar te navigeren met scroll</li>
+          </ul>
+        </section>
+
+        <section class="nerd-section">
+          <h2 class="nerd-title">Wat heb ik geleerd?</h2>
+          <p class="nerd-text">
+            Ik heb voor het eerst iets in 3D gemaakt en moest daar zelfs wiskunde voor gebruiken om de pilaar modulair op te bouwen. Ook leerde ik hoe belangrijk het is om ieders kracht in te zetten binnen een team. Door goede taakverdeling hebben we een tof project neergezet met technieken die ik voorheen nog niet kende.
+          </p>
+        </section>
+
+        <section class="nerd-section">
+          <img src="./images/hackaton02.jpeg" alt="Hackathon project" />
+          <img src="./images/hackaton.jpeg" alt="Hackathon project" />
+          <img src="./images/hackaton01.jpeg" alt="Hackathon project" />
+        </section>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>

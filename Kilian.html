@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kilian Valkhof - Weekly Nerd</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nerds.css">
 </head>
+
 <body>
     <header>
         <ul>
-            <li><a href="/index.html">Projecten</a></li>
-            <li><svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-                <path d="M59.4287 0H68.5714V36.7999C68.5714 45.1286 68.5714 49.2929 70.32 52.4153C71.5558 54.622 73.3779 56.4441 75.5846 57.6798C78.707 59.4284 82.8714 59.4284 91.2 59.4284H128V68.5714C95.1785 68.5714 68.5714 95.1786 68.5714 128H59.4287V91.2001C59.4287 82.8714 59.4287 78.7071 57.68 75.5846C56.4442 73.3778 54.6221 71.5559 52.4154 70.32C49.293 68.5714 45.1286 68.5714 36.8 68.5714H0V59.4284C32.8215 59.4284 59.4287 32.8214 59.4287 0Z"/>
-                </svg>
-                </li>
-            <li><a href="/index.html">Weekly Nerds</a></li>
+
+            <li>
+                <a href="index.html">
+                    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M59.4287 0H68.5714V36.7999C68.5714 45.1286 68.5714 49.2929 70.32 52.4153C71.5558 54.622 73.3779 56.4441 75.5846 57.6798C78.707 59.4284 82.8714 59.4284 91.2 59.4284H128V68.5714C95.1785 68.5714 68.5714 95.1786 68.5714 128H59.4287V91.2001C59.4287 82.8714 59.4287 78.7071 57.68 75.5846C56.4442 73.3778 54.6221 71.5559 52.4154 70.32C49.293 68.5714 45.1286 68.5714 36.8 68.5714H0V59.4284C32.8215 59.4284 59.4287 32.8214 59.4287 0Z" />
+                    </svg>
+                </a>
+            </li>
         </ul>
     </header>
     <main class="nerd">
-        <section>
-            <img src="./images/kilian.jpeg" alt="Foto van Kilian Valkhof">
-            <h1>Kilian Valkhof</h1>
-            <p class="meta">Topic: Don't use JS for that | Datum: 5 februari 2025</p>
-            <p><strong>Introductie:</strong> Kilian Valkhof is een front-end developer en maker van de Polypane browser. Hij is een groot voorstander van toegankelijkheid en eenvoud op het web. Tijdens zijn talk deelde hij inzichten over waarom we vaak te snel naar JavaScript grijpen voor functionaliteiten die prima met HTML en CSS kunnen worden opgelost.</p>
+        <section class="hero-section">
+            <h1 class="hero-title">Weekly Nerds</h1>
+            <p class="hero-subtitle">Kilian Valkhof - Stop using JS for that</p>
         </section>
+        <div class="nerd-wrapper">
+            <div class="nerd-content">
+                <section class="nerd-section">
+                    <img src="./images/kilian.jpeg" alt="Foto van Kilian Valkhof">
+                    <h2 class="nerd-title">Introductie</h2>
+                    <p class="nerd-text">Kilian Valkhof is een front-end developer en maker van de Polypane browser. Hij
+                        is een groot voorstander van toegankelijkheid en eenvoud op het web. Tijdens zijn talk deelde
+                        hij inzichten over waarom we vaak te snel naar JavaScript grijpen voor functionaliteiten die
+                        prima met HTML en CSS kunnen worden opgelost.</p>
+                </section>
 
-        <section>
-            <h2>Waar ging de talk over?</h2>
-            <p>In zijn presentatie "Stop using JS for that" liet Kilian zien hoe je met de minst krachtige geschikte taal – HTML en CSS – al veel kunt bereiken. Hij benadrukte dat deze talen robuuster en toegankelijker zijn en dat browsers beter omgaan met foutjes in deze talen dan met JavaScript.</p>
-        </section>
+                <section class="nerd-section">
+                    <h2 class="nerd-title">Waar ging de talk over?</h2>
+                    <p class="nerd-text">In zijn presentatie "Stop using JS for that" liet Kilian zien hoe je met de
+                        minst krachtige geschikte taal – HTML en CSS – al veel kunt bereiken. Hij benadrukte dat deze
+                        talen robuuster en toegankelijker zijn en dat browsers beter omgaan met foutjes in deze talen
+                        dan met JavaScript.</p>
+                </section>
 
-        <section>
-            <h2>Belangrijke inzichten</h2>
-            <ul>
-                <li><strong>Rule of least power:</strong> Gebruik de minst krachtige taal die geschikt is voor het doel.</li>
-                <li><code>input:focus</code> helpt keyboardgebruikers navigeren.</li>
-                <li>Browsers kunnen fouten in HTML/CSS beter corrigeren dan in JS.</li>
-                <li>Het web is backward-compatible; alles blijft werken, zelfs verouderde dingen.</li>
-                <li>Gebruik liever moderne alternatieven dan oude technieken.</li>
-            </ul>
-        </section>
+                <section class="nerd-section">
+                    <h2 class="nerd-title">Belangrijke inzichten</h2>
+                    <ul>
+                        <li><span>Rule of least power</span> Gebruik de minst krachtige taal die geschikt is voor het
+                            doel.</li>
+                        <li><code>input:focus</code> helpt keyboardgebruikers navigeren.</li>
+                        <li>Browsers kunnen fouten in HTML/CSS beter corrigeren dan in JS.</li>
+                        <li>Het web is backward-compatible; alles blijft werken, zelfs verouderde dingen.</li>
+                        <li>Gebruik liever moderne alternatieven dan oude technieken.</li>
+                    </ul>
+                </section>
 
-        <section>
-            <h2>Demo: Accordion zonder JavaScript</h2>
-            <p>Een voorbeeld van een interactief element met alleen HTML:</p>
-
-            <details>
-                <summary>Waarom geen JS?</summary>
-                <p>Omdat HTML en CSS vaak voldoende zijn voor simpele interactie.</p>
-            </details>
-
-            <pre><code>&lt;details&gt;
+                <section class="nerd-section">
+                    <h2 class="nerd-title">Demo: Accordion zonder JavaScript</h2>
+                    <details>
+                        <summary>Waarom geen JS?</summary>
+                        <p>Omdat HTML en CSS vaak voldoende zijn voor simpele interactie.</p>
+                    </details>
+                    <pre><code>&lt;details&gt;
   &lt;summary&gt;Klik hier&lt;/summary&gt;
   &lt;p&gt;Inhoud die zichtbaar wordt&lt;/p&gt;
 &lt;/details&gt;</code></pre>
-        </section>
+                </section>
 
-        <section>
-            <h2>Conclusie</h2>
-            <p>De talk van Kilian heeft me doen inzien dat eenvoud krachtig is. Door beter na te denken over wanneer ik echt JavaScript nodig heb, kan ik mijn codebase schoner, sneller en toegankelijker houden. Dit neem ik zeker mee in mijn werkwijze tijdens de minor en mijn carrière als programmeur.</p>
-        </section>
+                <section class="nerd-section">
+                    <h2 class="nerd-title">Conclusie</h2>
+                    <p class="nerd-text">De talk van Kilian heeft me doen inzien dat eenvoud krachtig is. Door beter na
+                        te denken over wanneer ik echt JavaScript nodig heb, kan ik mijn codebase schoner, sneller en
+                        toegankelijker houden. Dit neem ik zeker mee in mijn werkwijze tijdens de minor en mijn carrière
+                        als programmeur.</p>
+                </section>
+            </div>
+        </div>
     </main>
 </body>
+
 </html>

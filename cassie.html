@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cassie Adams - Weekly Nerd</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cassie Adams - Weekly Nerd</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="nerds.css">
 </head>
+
 <body>
     <header>
         <ul>
-            <li><a href="/index.html">Projecten</a></li>
-            <li><svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
-                <path d="M59.4287 0H68.5714V36.7999C68.5714 45.1286 68.5714 49.2929 70.32 52.4153C71.5558 54.622 73.3779 56.4441 75.5846 57.6798C78.707 59.4284 82.8714 59.4284 91.2 59.4284H128V68.5714C95.1785 68.5714 68.5714 95.1786 68.5714 128H59.4287V91.2001C59.4287 82.8714 59.4287 78.7071 57.68 75.5846C56.4442 73.3778 54.6221 71.5559 52.4154 70.32C49.293 68.5714 45.1286 68.5714 36.8 68.5714H0V59.4284C32.8215 59.4284 59.4287 32.8214 59.4287 0Z"/>
-                </svg>
-                </li>
-            <li><a href="/index.html">Weekly Nerds</a></li>
+
+            <li>
+                <a href="index.html">
+                    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M59.4287 0H68.5714V36.7999C68.5714 45.1286 68.5714 49.2929 70.32 52.4153C71.5558 54.622 73.3779 56.4441 75.5846 57.6798C78.707 59.4284 82.8714 59.4284 91.2 59.4284H128V68.5714C95.1785 68.5714 68.5714 95.1786 68.5714 128H59.4287V91.2001C59.4287 82.8714 59.4287 78.7071 57.68 75.5846C56.4442 73.3778 54.6221 71.5559 52.4154 70.32C49.293 68.5714 45.1286 68.5714 36.8 68.5714H0V59.4284C32.8215 59.4284 59.4287 32.8214 59.4287 0Z" />
+                    </svg>
+                </a>
+            </li>
         </ul>
     </header>
-    <main class="nerd">
-        <section>
-            <img src="./images/cassie.jpeg" alt="Foto van Cassie Adams">
-            <h1>Cassie Adams</h1>
-            <p class="meta">Spreker: Cassie Adams | 8 mei 2025</p>
-            <p><strong>Introductie:</strong> Cassie Adams is een animatie-expert en creative developer. In haar talk “Beyond Tweening” laat ze zien hoe je met GSAP echt álles kunt animeren, van simpele interacties tot complexe scroll gebaseerde animaties.</p>
+
+  <main class="nerd">
+    <section class="hero-section">
+      <h1 class="hero-title">Weekly Nerds</h1>
+      <p class="hero-subtitle">Cassie Adams – Beyond Tweening</p>
+    </section>
+
+    <div class="nerd-wrapper">
+      <div class="nerd-content">
+        <section class="nerd-section">
+          <img src="./images/cassie.jpeg" alt="Foto van Cassie Adams" />
+          <h2 class="nerd-title">Introductie</h2>
+          <p class="nerd-text">
+            Cassie Adams is een animatie-expert en creative developer. In haar talk “Beyond Tweening” laat ze zien hoe je met GSAP echt álles kunt animeren, van simpele interacties tot complexe scroll gebaseerde animaties.
+          </p>
+          <p class="meta">Spreker: Cassie Adams | 8 mei 2025</p>
         </section>
 
-        <section>
-            <h2>Waar ging de talk over?</h2>
-            <p>GSAP is niet alleen handig voor simpele tweens, maar vooral krachtig wanneer je meerdere animaties achter elkaar wilt zetten met behulp van een timeline. Ze benadrukte dat GSAP geschikt is voor HTML-, CSS- en JS-elementen. Daarnaast werd het belang van "het juiste gereedschap voor de juiste klus" besproken.</p>
+        <section class="nerd-section">
+          <h2 class="nerd-title">Waar ging de talk over?</h2>
+          <p class="nerd-text">
+            GSAP is niet alleen handig voor simpele tweens, maar vooral krachtig wanneer je meerdere animaties achter elkaar wilt zetten met behulp van een timeline. Ze benadrukte dat GSAP geschikt is voor HTML-, CSS- en JS-elementen. Daarnaast werd het belang van "het juiste gereedschap voor de juiste klus" besproken.
+          </p>
         </section>
 
-        <section>
-            <h2>Belangrijke inzichten</h2>
-            <ul>
-                <li>GSAP maakt animaties mogelijk op HTML, CSS en JS elementen</li>
-                <li>Timelines zorgen voor overzicht en controle over animatiereeksen</li>
-                <li>Scroll-gebaseerde animaties en hover-effecten zijn makkelijk te implementeren</li>
-                <li>“If all you have is a hammer, everything looks like a nail” – gebruik tools bewust</li>
-            </ul>
+        <section class="nerd-section">
+          <h2 class="nerd-title">Belangrijke inzichten</h2>
+          <ul>
+            <li>GSAP maakt animaties mogelijk op HTML, CSS en JS elementen</li>
+            <li>Timelines zorgen voor overzicht en controle over animatiereeksen</li>
+            <li>Scroll-gebaseerde animaties en hover-effecten zijn makkelijk te implementeren</li>
+            <li>“If all you have is a hammer, everything looks like a nail” – gebruik tools bewust</li>
+          </ul>
         </section>
 
-        <section>
-            <h2>Demo en tools</h2>
-            <ul>
-                <li><code>utils.random()</code>: genereert willekeurige getallen of kleuren</li>
-                <li><code>mapRange</code>: maakt animeren makkelijker over verschillende schermgroottes</li>
-                <li><code>wrap</code>: handig voor marquees</li>
-                <li><code>pipe</code>: combineert functies</li>
-                <li>Easing: je kunt easing op easing stapelen, gebruik de easing visualizer</li>
-                <li><code>matchMedia</code>: vergelijkbaar met <code>@media</code>, maar dan in JS – inclusief respect voor <code>reduceMotion</code></li>
-                <li><strong>Helper functions</strong>: bruikbaar voor complexe situaties zoals carousels en horizontale scrolling</li>
-                <li><code>MotionPathHelper</code>: bewerk motion paths live in de browser</li>
-            </ul>
+        <section class="nerd-section">
+          <h2 class="nerd-title">Demo en tools</h2>
+          <ul>
+            <li><code>utils.random()</code>: genereert willekeurige getallen of kleuren</li>
+            <li><code>mapRange</code>: maakt animeren makkelijker over verschillende schermgroottes</li>
+            <li><code>wrap</code>: handig voor marquees</li>
+            <li><code>pipe</code>: combineert functies</li>
+            <li>Easing: je kunt easing op easing stapelen, gebruik de easing visualizer</li>
+            <li><code>matchMedia</code>: vergelijkbaar met <code>@media</code>, maar dan in JS – inclusief respect voor <code>reduceMotion</code></li>
+            <li><strong>Helper functions</strong>: bruikbaar voor complexe situaties zoals carousels en horizontale scrolling</li>
+            <li><code>MotionPathHelper</code>: bewerk motion paths live in de browser</li>
+          </ul>
         </section>
 
-        <section>
-            <h2>Conclusie</h2>
-            <p>Ik werd best enthousiast van deze talk, omdat ik veel hou van motion en animatie. Ik heb inmiddels een goede basiskennis van HTML en CSS, maar mijn JavaScript skills wil ik nog verder aanscherpen. GSAP lijkt me een krachtige tool om creatiever en expressiever te kunnen werken op het web. Jammer dat deze talk net in een fase viel waarin we vooral met HTML en CSS bezig waren, maar tijdens de Meesterproef wil ik hier misschien in duiken om echt vette, betekenisvolle animaties te maken.</p>
+        <section class="nerd-section">
+          <h2 class="nerd-title">Conclusie</h2>
+          <p class="nerd-text">
+            Ik werd best enthousiast van deze talk, omdat ik veel hou van motion en animatie. Ik heb inmiddels een goede basiskennis van HTML en CSS, maar mijn JavaScript skills wil ik nog verder aanscherpen. GSAP lijkt me een krachtige tool om creatiever en expressiever te kunnen werken op het web. Jammer dat deze talk net in een fase viel waarin we vooral met HTML en CSS bezig waren, maar tijdens de Meesterproef wil ik hier misschien in duiken om echt vette, betekenisvolle animaties te maken.
+          </p>
         </section>
-    </main>
+      </div>
+    </div>
+  </main>
 </body>
+
 </html>
